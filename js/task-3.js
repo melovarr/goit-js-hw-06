@@ -7,20 +7,21 @@
 // Візьми код нижче з ініціалізацією екземпляра й викликами методів і встав його після оголошення класу для перевірки коректності роботи. У консоль будуть виведені результати їх роботи. Будь ласка, нічого там не змінюй.
 // ---------------------------------------------------------------------
 class StringBuilder {
+    #value
     constructor(initialValue) {
-this._value = initialValue;
+this.#value = initialValue;
     }
     getValue(){
-return this._value;
+return this.#value;
     }
     padEnd(str){
-this._value = this._value + str;
+this.#value = this.#value + str;
     }
     padStart(str){
-this._value = str + this._value;
+this.#value = str + this.#value;
     }
     padBoth(str){
-this._value = str + this._value + str;
+this.#value = str + this.#value + str;
     }
 
 }
